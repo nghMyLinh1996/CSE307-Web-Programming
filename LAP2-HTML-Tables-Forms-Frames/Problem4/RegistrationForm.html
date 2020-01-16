@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.button {
+			background-color: #87CEFA;
+			text-align: center;
+		}
+		.A {
+			text-align: right;
+		}
+		table, td {
+			border: 1px solid black;
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<form action="" method="post">
+		<table cellpadding="5">
+			<tr>
+				<td class="A"><strong>Last Name</strong></td>
+				<td>
+					<input type="text" name="lastName" size="50">
+				</td>
+			</tr>
+			<tr>
+				<td class="A"><strong>First Name</strong></td>
+				<td>
+					<input type="text" name="firstName">
+				</td>
+			</tr>
+			<tr>
+				<td class="A"><strong>Address</strong></td>
+				<td>
+					<textarea cols="50" name="address"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td class="A"><strong>City</strong></td>
+				<td>
+					<input type="text" name="city" size="20"><strong> State </strong><input type="text" name="state" size="10">
+				</td>
+			</tr>
+			<tr>
+				<td class="A"><strong>Zip/Postal Code</strong></td>
+				<td>
+					<input type="text" name="postalCode" size="10">
+				</td>
+			</tr>
+			<tr>
+				<td class="A"><strong>Country</strong></td>
+				<td>
+					<select name="Country">
+						<option value="VietNam">VietNam</option>
+						<option value="Korean">Korean</option>
+						<option value="Laos">Laos</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="A"><strong>Phone (Country Code, Area Code, Number</strong></td>
+				<td>
+					( +<input type="text" name="countryCode" size="3">) <input type="text" name="areaCode" size="3"> - <input type="text" name="phone" size="20">
+				</td>
+			</tr>
+			<tr>
+				<td class="A"><strong>E-mail</strong></td>
+				<td>
+					<input type="text" name="e-mail" size="50" placeholder="name@gmail.com">
+				</td>
+			</tr>
+			<tr>
+				<td class="A"><strong>Brith Date</strong></td>
+				<td>
+					Month <input type="text" name="month" size="2"> Day <input type="text" name="day" size="2"> Year(4 digit) <input type="text" name="year" size="4">					
+				</td>
+			</tr>
+			<tr>
+				<td class="A"><strong>Gender</strong></td>
+				<td>
+					<select name="gender">
+						<option value="Male" selected>Male</option>
+						<option value="Female">Female</option>
+						<option value="Other">Other</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="A"><strong>Starting Date</strong></td>
+				<td>
+					<input type="radio" name="2019" value="Spring2019"> Spring 2019
+					<input type="radio" name="2019" value="Summer2019"> Summer 2019
+				</td>
+			</tr>
+			<tr>
+				<td class="A"><strong>Comments/Questions</strong>
+				<td>
+					<textarea cols="50" name="comment" placeholder="Please send me more information in the logging."></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td class="button" colspan="2">
+					<input type="submit" name="submit" value="Submit">
+					<input type="reset" name="reset" value="Clear This Form">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
