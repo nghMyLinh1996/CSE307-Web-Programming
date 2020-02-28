@@ -1,0 +1,39 @@
+body{
+	background-color: #4d4d4d;
+}
+h1{
+	font-family: 'Times New Roman';
+	font-size: 30px;
+	color: #b3b3b3;
+}
+.col1{
+	font-family: 'Times New Roman';
+	font-size: 20px;
+	color: white;
+}
+.span{
+	color: red;
+}
+.col2{
+	color: yellow;
+}
+.col2:hover{
+	color: red;
+	text-decoration: none;
+}
+.button{
+	width: 18px;
+	height: 18px;
+	border-radius: 15px;
+	background-color: green;
+	border: none;
+}
+.hour{
+	color: aqua;
+}
+.white{
+	color: #b3b3b3;
+}
+.orange{
+	color: orange;
+}
