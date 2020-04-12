@@ -12,11 +12,24 @@ header, footer {
 	text-align: left;
 }
 
+main:after{
+	content: " ";
+	clear: both;
+	display: block;
+	height: 0;
+}
+
+main{
+	padding: 5px;
+}
+
 #menu {
 	float: left;
 	max-width: 160px;
+	width: 25%;
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 #menu ul {
@@ -46,8 +59,10 @@ header, footer {
 	color: black
 }
 article {
-	margin-left: 180px;
+	/*margin-left: 180px;*/
+	width: 75%;
+	float: right;
+	box-sizing: border-box;
 	/*border-left: 2px solid gray;*/
-	padding: 2px;
-	overflow: auto;
+	padding: 5px;
 }
