@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Exercise</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style type="text/css">
+		.container-1{
+			display: flex;
+			/*align-content: space-around;*/
+			align-items: center;
+
+		}
+		.product{
+			width: 25%;
+			height: auto;
+			border-radius: 15px;
+			margin-right: 20px;
+			margin-left: 20px;
+			box-sizing: border-box;
+			position: relative;
+			box-shadow: 3px 3px 3px 1px gray;
+			border: 1px solid gray;
+			padding: 10px;
+
+		}
+
+		.news{
+			border-radius: 10px;
+			border: 2px solid gray;
+			margin-right: 20px;
+		}
+		div.container-fluid{
+			width: 100%;
+			height: auto;
+			margin: 0;
+			box-sizing: border-box;
+			border: 1px solid gray;
+			border-radius: 10px;
+		}
+		div.new:after{
+		content: " ";
+		clear: both;
+		display: block;
+		height: 0;
+		}
+		article.news{
+			position: relative;
+		}
+		img.news{
+			background-position: center;
+			background-size: cover;
+			display: block;
+			height: auto;
+			width: 25%;
+			margin: 10px; 
+			padding: 5px; 
+			border-radius: 10px;
+			float: left;
+			/*border: 1px solid gray;*/
+		}
+		a.news{
+			display: block;
+		}
+		a{
+			text-decoration: none;
+		}
+		img{
+			max-width: 100%;
+		}
+		.title.news{
+			color: black;
+			font-weight: 700px;
+			float: right;
+		}
+		.title.news:hover{
+			color: blue;
+			font-weight: 700px;
+		}
+		.text{
+			color: #262e40;
+			margin-top:10px;
+			font-size: 15px;
+		}
+		.author{
+			color: lightblue;
+			font-weight: both;
+		}
+		.time{
+			width: 30px;
+			border-radius: 50px;
+		}
+		@media(min-width: 701){
+			.title{
+			font-size: 20px;
+			line-height: 27px;
+			}
+			.img{
+				position: absolute;
+				top: 24px;
+				left: 24px;
+				width: 25%px;
+				height: 156px;
+			}
+			article.news{
+				padding: 24px;
+				padding-left:300px;
+				min-height: 204px;
+			}
+
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div>Công ty ABC</div>
+		</header>
+
+		<main>
+			<nav id="menu">
+			<ul>
+				<li><a href="#">The Flight</a></li>
+				<li><a href="#">The City</a></li>
+				<li><a href="#">The Island</a></li>
+				<li><a href="#">The Food</a></li> 
+			</nav>
+
+			<article>
+				<div class="text">The City</div>
+				<p>
+				Việt Nam đã làm “quyết liệt” và “sớm” việc cách ly xã hội. Mình giải quyết được tổng thể việc cách ly xã hội từ một vài nước đầu tiên như Trung Quốc, Hàn Quốc đến các nước châu Âu, Mỹ và kể cả các nước sau này. Như Singapore.
+				</p>
+				<p>
+				Vì thế, ông Phu nhấn mạnh, giai đoạn này phải làm quyết liệt việc giãn cách xã hội, không cho người bệnh tiếp xúc với người bệnh.
+				</p>
+			</article>
+		</main>
+
+	
+	<div class="container-fluid">
+		<div>
+			<h4 style="text-decoration-line:underline; text-decoration-color: orange; padding: 5px;"><span>TIN LIÊN QUAN</span></h4>
+		</div>
+		<div class="row">
+			<div class="col-xl-5 col-12 news">
+				<div class="img">
+					<img src="https://photo2.tinhte.vn/data/attachment-files/2020/04/4963230_cover_phim_netflix.jpg" alt="flim" class="news img">
+				</div>
+				<div style="width: 70%; float: right" class="title">
+					<h3 >Chia sẻ phim trên Netflix và HBO để xem trong mùa dịch (phần 2)</h3>
+					<p class="text">
+						Mình tiếp tục tổng hợp một số phim trên Netflix và HBO để cùng xem trong mùa dịch rảnh rỗi ở nhà. Mình chọn Netflix và HBO vì 2 dịch vụ giải trí này rất phổ biến ở Việt Nam, cũng như những phim độc quyền thường rất hay.
+					</p>
+					<p class="infor">
+						<img src="https://photo2.tinhte.vn/data/avatars/m/252/252123.jpg?1571427085" width="30px" height="30px" alt="avt" class="avt">
+						<span class="author">MinhTrND</span>
+						<span>
+							<span class="time">2 giờ trước</span>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xl-5 col-12 news">
+				<div class="img">
+					<img src="https://photo2.tinhte.vn/data/attachment-files/2020/04/4963230_cover_phim_netflix.jpg" alt="flim" class="news img">
+				</div>
+				<div style="width: 70%; float: right" class="title">
+					<h3 >Chia sẻ phim trên Netflix và HBO để xem trong mùa dịch (phần 2)</h3>
+					<p class="text">
+						Mình tiếp tục tổng hợp một số phim trên Netflix và HBO để cùng xem trong mùa dịch rảnh rỗi ở nhà. Mình chọn Netflix và HBO vì 2 dịch vụ giải trí này rất phổ biến ở Việt Nam, cũng như những phim độc quyền thường rất hay.
+					</p>
+					<p class="infor">
+						<img src="https://photo2.tinhte.vn/data/avatars/m/252/252123.jpg?1571427085" width="30px" height="30px" alt="avt" class="avt">
+						<span class="author">MinhTrND</span>
+						<span>
+							<span class="time">2 giờ trước</span>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-1">
+		<div>
+			<h4 style="text-decoration-line:underline; text-decoration-color: orange; padding: 5px;">CÓ THỂ BẠN THÍCH</h4>
+		</div>
+		<div class="col-xl-2 col-12 product">
+			<div style="position: relative;">
+				<img src="https://cdn.nguyenkimmall.com/images/thumbnails/180/180/detailed/230/TIGER-JAX-S18W.jpg" alt="cook-rice" style="display: block; margin-left: auto;margin-right: auto;">
+				<p style="position: absolute;background-color: red;color: white;top: 0px; right: 28px;background-position: 0px 144px; width: 45px;height: 50px;text-indent: 3px;font-weight: bold;font-size: 16px">-50%</p>
+			</div>
+			<div style="padding: 5px; padding-bottom: 10px">
+				<div style="color: gray; font-weight: bold; font-size: 20px;">
+					Nồi cơm điện vừa bán vừa cho
+				</div>
+				<span class="discount" style="font-weight: bold;">2.000.000 đ</span>
+				<span class="price" style="text-decoration: line-through;">5.000.000 đ</span>
+
+			</div>
+		</div>
+
+		<div class="col-xl-2 col-12 product">
+			<div style="position: relative;">
+				<img src="https://cdn.nguyenkimmall.com/images/thumbnails/180/180/detailed/230/TIGER-JAX-S18W.jpg" alt="cook-rice" style="display: block; margin-left: auto;margin-right: auto;">
+				<p style="position: absolute;background-color: red;color: white;top: 0px; right: 28px;background-position: 0px 144px; width: 45px;height: 50px;text-indent: 3px;font-weight: bold;font-size: 16px">-50%</p>
+			</div>
+			<div style="padding: 5px; padding-bottom: 10px">
+				<div style="color: gray; font-weight: bold; font-size: 20px;">
+					Nồi cơm điện vừa bán vừa cho
+				</div>
+				<span class="discount" style="font-weight: bold;">2.000.000 đ</span>
+				<span class="price" style="text-decoration: line-through;">5.000.000 đ</span>
+
+			</div>
+		</div>
+
+		<div class="col-xl-2 col-12 product">
+			<div style="position: relative;">
+				<img src="https://cdn.nguyenkimmall.com/images/thumbnails/180/180/detailed/230/TIGER-JAX-S18W.jpg" alt="cook-rice" style="display: block; margin-left: auto;margin-right: auto;">
+				<p style="position: absolute;background-color: red;color: white;top: 0px; right: 28px;background-position: 0px 144px; width: 45px;height: 50px;text-indent: 3px;font-weight: bold;font-size: 16px">-50%</p>
+			</div>
+			<div style="padding: 5px; padding-bottom: 10px">
+				<div style="color: gray; font-weight: bold; font-size: 20px;">
+					Nồi cơm điện vừa bán vừa cho
+				</div>
+				<span class="discount" style="font-weight: bold;">2.000.000 đ</span>
+				<span class="price" style="text-decoration: line-through;">5.000.000 đ</span>
+
+			</div>
+		</div>
+	</div>
+		<footer>Footer Text</footer>
+	</div>
+</body>
+</html>
