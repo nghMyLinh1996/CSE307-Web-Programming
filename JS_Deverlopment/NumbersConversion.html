@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numbers Conversion</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<!-- Convert floating-point to integer number -->
+	<!-- <script type="text/javascript">
+		var x = 4.59;
+		var z = Math.floor(x);
+		document.write("Convert value of " + x + " is " + z);
+	</script> -->
+	<script type="text/javascript">
+		let x = 7.75;
+		let y = x | 0;
+		alert("Convert floating-point value of " + x + " is" + y);
+	</script>
+<!-- Convert to integer number with rounding -->
+	<script type="text/javascript">
+		var x = 8.75;
+		var y = (x + 0.5) | 0;
+		alert("Convert to integer number with rounding " + x + " is " + y);
+	</script>
+
+	<!-- Convert string to integer -->
+	<script type="text/javascript">
+		var str = '1234'
+		var i = str | 0 + 1;
+		alert("Convert string to integer is" + i);
+	</script>
+</body>
+</html>
