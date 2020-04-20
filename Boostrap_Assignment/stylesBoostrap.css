@@ -1,0 +1,99 @@
+.container-fluid {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 10px;
+}
+header, footer {
+	background-color: #eee; 
+	padding: 10px 15px; 
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+.Menu {
+	list-style-type: none; 
+	padding-left: 0px;
+}
+.Menu li {
+	background-color: lightblue;
+	color: black;
+	padding: 5px 10px;
+	margin-bottom: 15px;
+}
+.Title {
+	border: 1px solid #ccc;
+	padding: 25px 30px;
+}
+.Imge {
+	display: block;
+    height: auto;
+    margin: auto;
+    padding: 10px 15px;
+    width: 100%;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+.avt {
+	display: inline; 
+	border-radius: 50%;
+	padding: 15px;
+}
+.News {
+	border-bottom: 2px solid orange; 
+	display: inline-block;
+}
+.item {
+	border: 1px solid #ccc; 
+	border-radius: 20px;
+}
+.author {
+	display: inline;
+}
+
+.name {
+	color: blue;
+}
+.mainProduct{
+	padding: 5px;
+}
+.product {
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;z-index: 1; 
+	position: relative;
+}
+.imgeProduct {
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;
+}
+.discount {
+	position: absolute;
+	background-color: red;
+	color: white;
+	top: 15px; 
+	right: 25px;
+	width: 40px;
+	height: 35px;
+	background-size: 40px 35px;
+	font-weight: bold;
+}
+.nameProduct {
+	padding: 5px; 
+	padding-bottom: 10px;
+}
+.titleProduct {
+	color: black; 
+	font-weight: bold; 
+	font-size: 15px;
+	padding: 5px;
+}
+.cost {
+	font-weight: bold;
+	padding: 5px;
+}
+.price {
+	text-decoration: line-through;
+	padding: 5px;
+}
+
