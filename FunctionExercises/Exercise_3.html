@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boostrap Exercise</title>
+	<link rel="stylesheet" type="text/css" href="stylesBoostrap.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style>
+	.container-fluid {
+		width: 100%;
+		height: auto;
+		margin: 0;
+		box-sizing: border-box;
+		border-radius: 10px;
+		padding: 10px;
+	}
+	header, footer {	
+		background-color: #eee; 
+		padding: 10px 15px; 
+		border: 1px solid #ccc;
+		margin-bottom: 20px;
+	}
+	.Menu {
+		list-style-type: none; 
+		padding-left: 0px;
+	}
+	.Menu li {
+		background-color: lightblue;
+		color: black;
+		padding: 5px 10px;
+		margin-bottom: 15px;
+	}
+	.Title {
+		border: 1px solid #ccc;
+		padding: 25px 30px;
+	}
+	.Imge {
+		display: block;
+	    height: auto;
+	    margin: auto;
+	    padding: 10px 15px;
+	    width: 100%;
+	    padding-right: 5px;
+	    border-radius: 10px;
+	}
+	.avt {
+		display: inline; 
+		border-radius: 50%;
+		padding: 15px;
+	}
+	.News {
+		border-bottom: 2px solid orange; 
+		display: inline-block;
+	}
+	.item {
+		border: 1px solid #ccc; 
+		border-radius: 20px;
+	}
+	.author {
+		display: inline;
+	}
+
+	.name {
+		color: blue;
+	}
+	.mainProduct{
+		padding: 5px;
+	}
+	.product {
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;z-index: 1; 
+		position: relative;
+	}
+	.imgeProduct {
+		display: block; 
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.discount {
+		position: absolute;
+		background-color: red;
+		color: white;
+		top: 15px; 
+		right: 25px;
+		width: 40px;
+		height: 35px;
+		background-size: 40px 35px;
+		font-weight: bold;
+	}
+	.nameProduct {
+		padding: 5px; 
+		padding-bottom: 10px;
+	}
+	.titleProduct {
+		color: black; 
+		font-weight: bold; 
+		font-size: 15px;
+		padding: 5px;
+	}
+	.cost {
+		font-weight: bold;
+		padding: 5px;
+	}
+	.price {
+		text-decoration: line-through;
+		padding: 5px;
+	}
+
+	</style>
+</head>
+<body>
+	
+<div>
+		<div class="mainProduct">
+			<h3 class="News">CÓ THỂ BẠN THÍCH</h3>
+			<div class="row">
+				<div class="col-md-3 col-12">
+					<article class="product">
+						<div>
+							<img src="https://cdn.nguyenkimmall.com/images/thumbnails/180/180/detailed/230/TIGER-JAX-S18W.jpg" alt="cook" class="imgeProduct">
+							<p class="discount">-50%</p>
+						</div>
+						<div class="nameProduct">
+							<div class="titleProduct">
+								Nồi cơm điện vừa bán vừa cho
+							</div>
+							<span class="cost">2.000.000 đ</span>
+							<span class="price">5.000.000 đ</span>					
+						</div>
+					</article>
+				</div>
+				<div class="col-md-3 col-12">
+					<article class="product">
+						<div>
+							<img src="https://cdn.nguyenkimmall.com/images/thumbnails/180/180/detailed/230/TIGER-JAX-S18W.jpg" alt="cook" class="imgeProduct">
+							<p class="discount">-50%</p>
+						</div>
+						<div class="nameProduct">
+							<div class="titleProduct">
+								Nồi cơm điện vừa bán vừa cho
+							</div>
+							<span class="cost">2.000.000 đ</span>
+							<span class="price">5.000.000 đ</span>					
+						</div>
+					</article>
+				</div>
+				<div class="col-md-3 col-12">
+					<article class="product">
+						<div>
+							<img src="https://cdn.nguyenkimmall.com/images/thumbnails/180/180/detailed/230/TIGER-JAX-S18W.jpg" alt="cook" class="imgeProduct">
+							<p class="discount">-50%</p>
+						</div>
+						<div class="nameProduct">
+							<div class="titleProduct">
+								Nồi cơm điện vừa bán vừa cho
+							</div>
+							<span class="cost">2.000.000 đ</span>
+							<span class="price">5.000.000 đ</span>					
+						</div>
+					</article>
+				</div>
+				<div class="col-md-3 col-12">
+					<article class="product">
+						<div>
+							<img src="https://cdn.nguyenkimmall.com/images/thumbnails/180/180/detailed/230/TIGER-JAX-S18W.jpg" alt="cook" class="imgeProduct">
+							<p class="discount">-50%</p>
+						</div>
+						<div class="nameProduct">
+							<div class="titleProduct">
+								Nồi cơm điện vừa bán vừa cho
+							</div>
+							<span class="cost">2.000.000 đ</span>
+							<span class="price">5.000.000 đ</span>					
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+</div>
+
+	<script type="text/javascript">
+		function printProduct(arr) {
+			for (var i = 0; i < arr.length; i++) {
+				var a =`
+				<div class="col-md-3 col-12">
+					<article class="product">
+						<div>
+							<img src="https://cdn.nguyenkimmall.com/images/thumbnails/180/180/detailed/230/TIGER-JAX-S18W.jpg" alt="cook" class="imgeProduct">
+							<p class="discount">-50%</p>
+						</div>
+						<div class="nameProduct">
+							<div class="titleProduct">
+								Nồi cơm điện vừa bán vừa cho
+							</div>
+							<span class="cost">2.000.000 đ</span>
+							<span class="price">5.000.000 đ</span>					
+						</div>
+					</article>
+				</div>`;
+				console.log(a);
+			}
+		}
+		printProduct([0,1,2,3]);
+	</script>
+</body>
+</html>
