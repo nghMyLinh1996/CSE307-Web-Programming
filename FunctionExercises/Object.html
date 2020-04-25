@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oject</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		function human(_firstName, _LastName){
+			let person = {
+
+			};
+			person.firstName = _firstName;
+			person.LastName = _LastName;
+			person.toString = function(){
+				console.log(person.firstName);
+			};
+			return person;
+		}
+
+
+		function human2(_firstName, _LastName){
+			return {
+				firstName:  _firstName,
+				LastName: _LastName,
+				toString: function(){
+					console.log(this.firstName);
+				}
+
+			};
+		}
+		var a = human2("Nguyen", "An");
+		var b = human("Nguyen", "Anh");
+		a.toString();
+	</script>
+</body>
+</html>

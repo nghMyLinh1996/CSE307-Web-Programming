@@ -7,12 +7,15 @@
 <body>
 	<script type="text/javascript">
 		var value = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-		deleetetArray(value, 9);
-		function deleetetArray(value, key){
-			var index = value.indexOf(key);
-			value.splice(index, 1);
-		}
+		deleteArray(value, 9);
 		console.log(value);
+		function deleteArray(value, key){
+			for (var i = 0; i < value.length; i++) {
+				if (value[i] === key) {
+					value.splice(i, 1);					
+				}
+			}			
+		}
 	</script>
 </body>
 </html>

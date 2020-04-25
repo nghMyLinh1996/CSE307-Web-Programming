@@ -109,79 +109,24 @@
 	</style>
 </head>
 <body>
-	
-<div>
-		<div class="mainProduct">
-			<h3 class="News">CÓ THỂ BẠN THÍCH</h3>
-			<div class="row">
-				<div class="col-md-3 col-12">
-					<article class="product">
-						<div>
-							<img src="https://cdn.nguyenkimmall.com/images/thumbnails/180/180/detailed/230/TIGER-JAX-S18W.jpg" alt="cook" class="imgeProduct">
-							<p class="discount">-50%</p>
-						</div>
-						<div class="nameProduct">
-							<div class="titleProduct">
-								Nồi cơm điện vừa bán vừa cho
-							</div>
-							<span class="cost">2.000.000 đ</span>
-							<span class="price">5.000.000 đ</span>					
-						</div>
-					</article>
-				</div>
-				<div class="col-md-3 col-12">
-					<article class="product">
-						<div>
-							<img src="https://cdn.nguyenkimmall.com/images/thumbnails/180/180/detailed/230/TIGER-JAX-S18W.jpg" alt="cook" class="imgeProduct">
-							<p class="discount">-50%</p>
-						</div>
-						<div class="nameProduct">
-							<div class="titleProduct">
-								Nồi cơm điện vừa bán vừa cho
-							</div>
-							<span class="cost">2.000.000 đ</span>
-							<span class="price">5.000.000 đ</span>					
-						</div>
-					</article>
-				</div>
-				<div class="col-md-3 col-12">
-					<article class="product">
-						<div>
-							<img src="https://cdn.nguyenkimmall.com/images/thumbnails/180/180/detailed/230/TIGER-JAX-S18W.jpg" alt="cook" class="imgeProduct">
-							<p class="discount">-50%</p>
-						</div>
-						<div class="nameProduct">
-							<div class="titleProduct">
-								Nồi cơm điện vừa bán vừa cho
-							</div>
-							<span class="cost">2.000.000 đ</span>
-							<span class="price">5.000.000 đ</span>					
-						</div>
-					</article>
-				</div>
-				<div class="col-md-3 col-12">
-					<article class="product">
-						<div>
-							<img src="https://cdn.nguyenkimmall.com/images/thumbnails/180/180/detailed/230/TIGER-JAX-S18W.jpg" alt="cook" class="imgeProduct">
-							<p class="discount">-50%</p>
-						</div>
-						<div class="nameProduct">
-							<div class="titleProduct">
-								Nồi cơm điện vừa bán vừa cho
-							</div>
-							<span class="cost">2.000.000 đ</span>
-							<span class="price">5.000.000 đ</span>					
-						</div>
-					</article>
-				</div>
-			</div>
+<!-- <div>
+	<div class="container-fluid">
+		<h3 class="News">CÓ THỂ BẠN THÍCH</h3>
+		<div class="row" id="Product">
+			
 		</div>
-</div>
+	</div>
+</div> -->
 
 	<script type="text/javascript">
-		function printProduct(arr) {
-			for (var i = 0; i < arr.length; i++) {
-				var a =`
+		// var str = document.getElementById('Product');
+		// str.innerHTML = printProduct();
+		var a = "";
+		printProduct(a);
+		console.log(a);
+		function printProduct() {
+			for (var i = 0; i < 4; i++) {
+				 a += `
 				<div class="col-md-3 col-12">
 					<article class="product">
 						<div>
@@ -196,11 +141,11 @@
 							<span class="price">5.000.000 đ</span>					
 						</div>
 					</article>
-				</div>`;
-				console.log(a);
+				</div>`
+				;
 			}
+			return a;
 		}
-		printProduct([0,1,2,3]);
 	</script>
 </body>
 </html>
