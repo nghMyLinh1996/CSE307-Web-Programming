@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create A Product List</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="product">
+		
+	</div>
+<script type="text/javascript">
+	
+	let product = {
+		ID: "0312",
+		Name: "Apple",
+		Image: "Watch",
+		Price: "20$",
+		Discount: "15$"
+		toString: function(){
+			return this.Name
+		}
+	};
+	console.log(product.toString());
+
+	// function product(_ID, _Name, _Image, _Price, _DiscountedPrice){
+	// 	var productList = {
+
+	// 	};
+	// 	productList.ID = _ID;
+	// 	productList.Name = _Name;
+	// 	productList.Image = _Image;
+	// 	productList.Price = _Price;
+	// 	productList.DiscountedPrice = _DiscountedPrice;
+	// 	productList.toString = function(){
+	// 		console.log(productList.Name);
+	// 	};
+	// 	return productList;
+	// }
+	// var nameProduct = product("TV", "Phone");
+	// nameProduct.toString();
+
+
+
+	// function product(_ID, _Name, _Image, _Price, _DiscountedPrice){
+	// 	return {
+	// 		ID: _ID,
+	// 		Name: _Name,
+	// 		Image: _Image,
+	// 		Price: _Price,
+	// 		DiscountedPrice: _DiscountedPrice,
+	// 		toString: function(){
+	// 			console.log(this.Name);
+	// 		}
+	// 	};
+	// }
+	// var nameProduct = product("Laptop", "Phone", "Bag", "Pen", "Car");
+	// nameProduct.toString();
+</script>
+</body>
+</html>

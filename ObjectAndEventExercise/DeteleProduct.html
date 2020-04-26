@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete A Product List</title>
+</head>
+<body>
+	<div>
+		<h1>ID Products List</h1>
+		<ul id="delete">
+			<li>Watch</li>
+			<li>Laptop</li>
+			<li>TV</li>
+			<li>Phone</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+	let products = [
+	{
+		ID: "1",
+		Name: "Apple",
+		Image: "Watch",
+		Price: "20$",
+		Discount: "5$"
+	},
+	{
+		ID: "2",
+		Name: "LG",
+		Image: "TV",
+		Price: "20$",
+		Discount: "8$"
+	},
+	{
+		ID: "3",
+		Name: "OPPO",
+		Image: "Phone",
+		Price: "20$",
+		Discount: "6$"
+	},
+	{
+		ID: "4",
+		Name: "Dell",
+		Image: "Laptop",
+		Price: "20$",
+		Discount: "7$"
+	}
+	];
+	deleteProductList(products, 4);
+	console.log(products);
+	function deleteProductList(products, ID) {
+		for (var i = 1; i < products.length; i++) {
+			if (products[i] == ID) {
+				products.splice(i, 1);
+			}
+			var _deleteProduct = "<p>" + _deleteProduct + "<p>" + products[i].ID + "</p>";				
+		}
+		document.getElementById("delete").innerHTML = _deleteProduct;
+	}
+	// var deleteProduct = products.map(
+	// 	function(item){return item.ID;}).indexOf(1);
+	// products.splice(deleteProduct, 1);
+
+	</script>	
+</body>
+</html>
