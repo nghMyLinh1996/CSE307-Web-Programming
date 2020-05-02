@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+	<title>jQuery-Add-Remove</title>
+	<style type="text/css">
+		h2.title {
+            color: #555;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            border-bottom: 5px solid #ff8c00;
+            font-size: 18px;
+            font-weight: bold;
+            padding-bottom: 3px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+	</style>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	
+</head>
+<body>
+	<div class="container-fluid">
+	<h2 class="title">NAME LIST</h2>
+		<table class="table">
+		  <thead>
+		    <tr>
+		      <th scope="col">#</th>
+		      <th scope="col">First</th>
+		      <th scope="col">Last</th>
+		      <th scope="col">Function</th>
+		    </tr>
+		  </thead>
+		  <tfoot>
+		  	<tr>
+		  		<th scope="row"></th>
+		  		<td><input type="text" name="fristName" id="fName"></td>
+		  		<td><input type="text" name="lastName" id="lName"></td>
+		  		<td><button type="button" class="btn btn-danger" id="addRow">Add</button></td>
+		  	</tr>
+		  </tfoot>
+		  <tbody>
+			   	<tr>
+			      <th scope="row">1</th>
+			      <td>Mark</td>
+			      <td>Otto</td>
+			      <td><button type="button" class="btn btn-danger" id="btn">Remove</button></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">2</th>
+			      <td>Jacob</td>
+			      <td>Thornton</td>
+			      <td><button type="button" class="btn btn-danger" id="btn">Remove</button></td>
+			    </tr>
+			    <tr>
+				  <th scope="row">3</th>
+				  <td>Larry</td>
+				  <td>the Bird</td>
+				  <td><button type="button" class="btn btn-danger" id="btn">Remove</button></td>
+			    </tr>
+		  </tbody>
+		</table>
+	</div>
+	<script type="text/javascript">
+		$('.table tbody').on('click', '#btn', function() {
+			$(this).parents('tr').remove();
+		});
+
+		$('#addRow').click(function() {
+			var ten = $('#fName').val();
+			var ho = $('#lName').val();
+			var markup = `
+				<tr>
+			      <th scope="row"></th>
+			      <td>${ten}</td>
+			      <td>${ho}</td>
+			      <td><button type="button" class="btn btn-danger" id="btn">Remove</button></td>
+			    </tr>`;
+			    $('.table tbody').append(markup);
+		});
+	</script>
+</body>
+</html>
