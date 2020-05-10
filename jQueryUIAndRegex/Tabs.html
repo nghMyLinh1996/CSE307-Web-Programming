@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabs</title>
+	<meta charset="utf-8">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui-css"> -->
+</head>
+<body>
+	<div id="tabs">
+		<ul>
+			<li><a href="#tab-1">Nunc tincidunt</a></li>
+			<li><a href="#tab-2">Proin dolor</a></li>
+			<li><a href="#tab-3">Aenean lacinia</a></li>
+		</ul>
+		<div id="tab-1">
+			<p>Mauris mauris ante, blandit et, ultrics a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh.</p>
+		</div>
+		<div id="tab-2">
+			<p>Donect suscipit eros. Mam mi. Proin voverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+		</div>
+		<div id="tab-3">
+			<p>Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function() {
+			$('#tabs').tabs();
+			active:1
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regex Examples</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui-css">
+</head>
+<body>
+	<script type="text/javascript">
+		let text = 'For more information, see Chapter 3.4.4.4';
+		let acdemyRegex = /(Chapter\d+(\.\d)*)/i;
+		let result = text.match( acdemyRegex );
+		document.write( result );
+	</script>
+	<script type="text/javascript">
+		let text = 'text  with   lots of    spaces\n' + '    and lots of tabulations   ';
+		console.log(text.replace(/\s\s+/g, ' '));
+	</script>
+	<script type="text/javascript">
+		let expression = '4+5*count-initialCount+1';
+		let operands = expression.split(/\+/\*/-/);
+		console.log(operands);
+	</script>
+	<script type="text/javascript">
+		let text = 'javascript is awesome!'
+		let index = text.search(/is/);
+		console.log(index);
+	</script>
+</body>
+</html>
