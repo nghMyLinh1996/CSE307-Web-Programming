@@ -1,0 +1,33 @@
+#menuDesktop ul{
+	list-style-type: none;
+	background: #68228B;
+	text-align: center;
+}
+#menuDesktop ul li {
+	color: white;
+	display: inline-table;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	position: relative;
+}
+#menuDesktop ul li a{
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+#menuDesktop ul li a:hover{
+	background-color: #9A32CD;
+	color: white;
+}
+
+#menuDesktop ul li > .subMenu{
+	display: none;
+	position: absolute;
+}
+
+#menuDesktop ul li:hover .subMenu{
+	display: block;
+}
